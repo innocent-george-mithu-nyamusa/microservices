@@ -31,6 +31,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: git://github.com/innocent-george-mithu-nyamusa/microservices.git#main:udagram-reverseproxy
+          file: ./Dockerfile
           push: true
           tags: innocentmithu/reverseproxy:latest
       -
