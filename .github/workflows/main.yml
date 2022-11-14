@@ -22,28 +22,28 @@ jobs:
         name: Build and push Reverse proxy
         uses: docker/build-push-action@v3
         with:
-          context: udagram-reverseproxy
+          context: https://github.com/innocent-george-mithu-nyamusa/microservices.git#master:udagram-reverseproxy
           push: true
           tags: innocentmithu/reverseproxy:latest
       -
         name: Build and push Frontend
         uses: docker/build-push-action@v3
         with:
-          context: udagram-frontend
+          context: https://github.com/innocent-george-mithu-nyamusa/microservices.git#master:udagram-frontend
           push: true
           tags: innocentmithu/udagran-frontend:latest
       -
         name: Build and push Api feed 
         uses: docker/build-push-action@v3
         with:
-          context: udagram-api-feed
+          context: https://github.com/innocent-george-mithu-nyamusa/microservices.git#master:udagram-api-feed
           push: true
           tags: innocentmithu/udagram-api-feed:latest
       -
         name: Build and push api user
         uses: docker/build-push-action@v3
         with:
-          context: udagram-api-user
+          context: https://github.com/innocent-george-mithu-nyamusa/microservices.git#master:udagram-api-user
           push: true
           tags: innocentmithu/udagram-api-user:latest
       
